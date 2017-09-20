@@ -14,7 +14,7 @@ val spark = SparkSession.builder()
 
 val rdd = sc.textFile("/FileStore/tables/f10dnito1505888092349/texttest.txt")
 
-val count = rdd.map(x => (x, 1)).reduceByKey(_ + _).sortByKey()
+val count = rdd.map(x => (x, 1)).reduceByKey(_ + _)
 
 val vec = count.collect.toVector
 
