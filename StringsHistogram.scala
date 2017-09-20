@@ -4,6 +4,7 @@ import java.io._
 
 /**
   * Program for Apache Spark with imports omitted
+  *
   * Program creates a histogram of words discovered in Strings output from bulk_extractor.
   * I has many other uses though.
   */
