@@ -35,6 +35,10 @@ val clean4 =  rdd4.map(x => regex.replaceAllIn(x, ""))
 
 val result3 = result2.union(clean4)
 
+/**
+  *   Change code here to add more files.
+  */
+
 val fullRDD = result3.union(result3)
 
 val count = fullRDD.map(x => (x, 1)).reduceByKey(_ + _)
