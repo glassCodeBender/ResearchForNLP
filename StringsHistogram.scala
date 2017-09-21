@@ -45,4 +45,4 @@ val count = fullRDD.map(x => (x, 1)).reduceByKey(_ + _)
 val invert = count.map(_.swap).sortByKey(ascending = false)
 
 val finalResult = invert.map(x => s"${x._2} - ${x._1}")
-finalResult.saveAsTextFile("testProgram")
+finalResult.saveAsTextFile("/FileStore/tables/testProgram")
