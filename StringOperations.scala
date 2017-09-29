@@ -34,7 +34,8 @@ object StringOperations {
         val splitUp: Array[String] = Array( takeBeginning.mkString, arr.last )
         splitUp
       } else arr
-    } // END splitFirst()
+    } // END splitLasst()
+   
     /** Split on last occurence of char array */
     def splitLast( x: Array[Char] ): Array[String] = {
       val arr: Array[String] = str.split( x )
@@ -45,7 +46,7 @@ object StringOperations {
         val splitUp: Array[String] = Array( takeBeginning.mkString, arr.last )
         splitUp
       } else arr
-    } // END splitFirst()
+    } // END splitLast()
 
   } // END StringOpsContd
 }
