@@ -28,7 +28,7 @@ object StringOperations {
     /** Split on the last occurrence of a character. */
     def splitLast( x: Char ): Array[String] = {
       val arr: Array[String] = str.split( x )
-      val index = arr.length - 2
+      val index = arr.length - 1
 
       if ( arr.length > 2 ) {
         val takeBeginning: Array[String] = arr.take( index )
@@ -40,7 +40,7 @@ object StringOperations {
     /** Split on last occurrence of char array */
     def splitLast( x: Array[Char] ): Array[String] = {
       val arr: Array[String] = str.split( x )
-      val index = arr.length - 2
+      val index = arr.length - 1
 
       if ( arr.length > 2 ) {
         val takeBeginning: Array[String] = arr.take( index )
