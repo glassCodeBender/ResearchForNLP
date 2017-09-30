@@ -2,7 +2,7 @@ package com.bigbrainsecurity.nlp
 
 /**
   * A home for methods that extend the functionality of Scala's String operations.
-  * 
+  *
   * These methods can be called as follows:
   * "hey, y'all, I'm, getting better, at programming".splitFirst(',')
   */
@@ -48,6 +48,13 @@ object StringOperations {
         splitUp
       } else arr
     } // END splitFirst()
+
+    /** Methods to make the split() more robust */
+    def splitIt(x: Char) = str.split(x)
+    def splitIt(x: Array[Char]) = str.split(x)
+    def splitIt(x: String) = str.split(x.toCharArray)
+    def splitIt(x: Int) = str.split(x.toString.toCharArray)
+    def splitIt(x: Double) = str.split(x.toString.toCharArray)
 
   } // END StringOpsContd implicit class
 } // END StringOperations object
