@@ -22,6 +22,7 @@ class LemmaTokenizer(object):
 df = pd.read_csv('Amazon_Unlocked_Mobile.csv')
 df.head
 
+
 # Drop columns with empty values
 df.dropna(inplace=True)
 
@@ -31,7 +32,8 @@ df = df[df['Rating'] != 3]
 # Create new column where positive rating are encoded with 1s.
 # np.where() is kind of like a findReplace method. 
 # For all values, replace with either this or this based on Bool. 
-df['PositiveReviews'] = np.where(df['Rating'] > 3, 1, 0)
+df['PositiveReviews'] = np.where(df['Rating'] > 3, 1, -1)
+
 
 df['PositiveReviews'].mean()
 
