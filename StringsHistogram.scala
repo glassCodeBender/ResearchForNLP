@@ -6,7 +6,7 @@
   * bulk_extractor was used to extract all the strings from a Windows image. Then, Apache Spark 
   * was used to get a word count for each string that was extracted.
   * 
-  * This program can be used to help remove stop words before doing data analysis on Strings in an image. 
+  * This program can be used to help remove stop words before doing further data analysis on Strings in an image. 
   *
   * I has many other uses though.
   */
