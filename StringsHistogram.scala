@@ -1,7 +1,13 @@
 
 /**
+  *
   * Program for Apache Spark with imports omitted because I used DataBricks.
   * Program creates a histogram of words discovered in Strings output from bulk_extractor.
+  * bulk_extractor was used to extract all the strings from a Windows image. Then, Apache Spark 
+  * was used to get a word count for each string that was extracted.
+  * 
+  * This program can be used to help remove stop words before doing data analysis on Strings in an image. 
+  *
   * I has many other uses though.
   */
 
